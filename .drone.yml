@@ -17,13 +17,3 @@ steps:
   commands:
   - echo A Build Simulation
   - echo DONE
-  
-- name: backend
-  image: alpine
-  commands:
-  - go build
-  - go test
-  
-  depends_on:
-  - 2_Build_The_Code
-  - 1_PreCheck_scripts
